@@ -1,0 +1,36 @@
+<div>
+  <div style="text-align: center;" class="bg-inverse text-white">
+    <h5>What do i have?</h5>
+  </div>
+  <hr/>
+  <!-- <ul class="list-group list-group-flush">
+    <li class="list-group-item"  *ngFor="let item of items" 
+    style="height: 65px; padding-left: 10px; padding-right: 10px;"  >
+    <div style="width: 100%">
+    <div style="text-align: center; "><b>{{item.name}}</b></div>
+        
+        <div style="float: right;"><b>Loc-</b>{{item.shelf.name}}</div>
+        <div style="float: left;"><b>Exp-</b>{{item.expirationDate | date:'shortDate'}}</div>
+      </div>
+    </li>
+  </ul> -->
+
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item"  *ngFor="let item of items" 
+    style="height: 65px; padding-left: 10px; padding-right: 10px;"  >
+    <div style="width: 100%">
+    <div>{{item.name}}</div>
+        
+        <div style="float: left; font-size: smaller;"><b>Loc-</b>{{item.shelf.name}}</div>
+        <div style="float: right; font-size: smaller;"><b>Exp-</b>{{item.expirationDate | date:'shortDate'}}</div>
+      </div>
+    </li>
+  </ul>
+
+  <!-- <ul class="list-group list-group-flush">
+    <li class="list-group-item" *ngFor="let item of items" style="height: 65px; padding-left: 10px; padding-right: 10px;">
+      <div style="width: 100%">
+        <span>{{item.name}} - <span style="font-size: smaller;">{{item.expirationDate | date:'shortDate'}} - {{item.shelf.name}}</span></span>
+      </div>
+    </li>
+  </ul> -->

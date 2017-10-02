@@ -12,7 +12,7 @@
         "karma.conf.js":true,   
         "e2e/":true,
         "**/*.spec.ts": true,
-        "**/*.scss":true,
+       "**/*.scss":true,
         "src/test.ts":true,
 
 

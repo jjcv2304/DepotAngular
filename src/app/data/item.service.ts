@@ -1,27 +1,22 @@
 import { Injectable } from '@angular/core';
-import { Subject, Observable } from 'rxjs/Rx';
+// import { Subject, Observable } from 'rxjs/Rx';
 import { IItem } from '../models/item.model';
 
 @Injectable()
 export class ItemService {
-  getEvents(): Observable<IItem[]> {
-    const subject = new Subject<IItem[]>();
-    setTimeout(() => { subject.next(ITEMS); subject.complete(); }, 100);
-    return subject;
+
+  // getItems(): Observable<IItem[]> {
+  //   const subject = new Subject<IItem[]>();
+  //   setTimeout(() => { subject.next(ITEMS); subject.complete(); }, 100);
+  //   return subject;
+  // }
+
+  getItems(): IItem[] {
+    return ITEMS;
   }
-  getEvent(id: number): IItem {
+
+  getItem(id: number): IItem {
     return ITEMS.find(event => event.id === id);
-  }
-
-  saveEvent(event) {
-    event.id = 999;
-    event.sessions = [];
-    ITEMS.push(event);
-  }
-
-  updateEvent(event) {
-    const index = ITEMS.findIndex(x => x.id = event.id);
-    ITEMS[index] = event;
   }
 }
 
