@@ -2,12 +2,12 @@
 {
     "files.exclude": {
         //JSON
-        // "package.json":true,
-        // "tsconfig.json":true,
-        // "tslint.json":true,
-        // ".angular-cli.json":true,
-        // "src/tsconfig.app.json": true,
-        // "src/tsconfig.spec.json":true,
+        "package.json":true,
+        "tsconfig.json":true,
+        "tslint.json":true,
+        ".angular-cli.json":true,
+        "src/tsconfig.app.json": true,
+        "src/tsconfig.spec.json":true,
         // Testing
         "karma.conf.js":true,   
         "e2e/":true,
