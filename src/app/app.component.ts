@@ -2,7 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'depot-root',
-  templateUrl: './app.component.html',
+  template: `
+  <depot-nav-bar></depot-nav-bar>
+  <router-outlet></router-outlet>
+`,
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {

@@ -8,7 +8,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "tslint": "tslint -t verbose --type-check --project tslint.json src/**/**.ts"
+    //"tslint3": "node_modules/.bin/tslint --type-check --project tslint.json src/**/**.ts"
+      
   },
   "private": true,
   "dependencies": {
